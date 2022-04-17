@@ -1,18 +1,12 @@
 import React from "react";
-import { View, StyleProp, ViewStyle, ScrollView } from "react-native";
+import { View, ScrollView } from "react-native";
 import GorgeousHeader from "react-native-gorgeous-header";
 import { AppleCard } from "react-native-apple-card-views";
 
 import menuImage from "../assets/menu.png";
 import searchImage from "../assets/search.png";
 
-type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
-
-interface DetailScreenProps {
-  style?: CustomStyleProp;
-}
-
-const DetailScreen: React.FC<DetailScreenProps> = ({ style }) => {
+const DetailScreen: React.FC = () => {
   return (
     <View style={{ flex: 1, paddingTop: 24, backgroundColor: "#fff" }}>
       <GorgeousHeader
