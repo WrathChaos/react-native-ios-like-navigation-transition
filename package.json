@@ -12,9 +12,8 @@
   "dependencies": {
     "@freakycoder/react-native-bounceable": "^0.2.5",
     "@react-native-community/masked-view": "^0.1.11",
-    "@react-navigation/native": "^6.0.10",
-    "@react-navigation/native-stack": "^6.6.1",
-    "@react-navigation/stack": "^6.2.1",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/stack": "^6.0.11",
     "react": "17.0.2",
     "react-native": "0.68.1",
     "react-native-androw": "^0.0.34",
