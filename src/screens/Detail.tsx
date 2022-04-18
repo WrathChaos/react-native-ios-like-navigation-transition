@@ -23,7 +23,10 @@ const DetailScreen: React.FC = () => {
         placeholder="Search for your fav traning..."
         placeholderTextColor="#fff"
         searchBarStyle={{
-          padding: 16,
+          height: 50,
+          padding: 0,
+          alignItems: "center",
+          paddingLeft: 16,
           marginTop: 24,
           borderRadius: 24,
           flexDirection: "row",

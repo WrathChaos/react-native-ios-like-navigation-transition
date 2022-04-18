@@ -21,7 +21,7 @@ const Navigation = () => {
       initialRouteName="home"
       screenOptions={{
         gestureEnabled: true,
-        ...(isAndroid && TransitionPresets.ModalTransition),
+        ...(isAndroid && TransitionPresets.ModalPresentationIOS),
       }}
     >
       <Stack.Group
