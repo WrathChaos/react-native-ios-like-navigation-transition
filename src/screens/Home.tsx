@@ -33,7 +33,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ style }) => {
             marginRight: 32,
             borderWidth: 3,
             borderColor: "#fff",
-            zIndex: 9,
+            zIndex: -1,
           }}
           source={require("../assets/sonnie-hiles-rX8gBeg2WM0-unsplash.jpg")}
         />
@@ -45,6 +45,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ style }) => {
             borderTopLeftRadius: 32,
             top: 20,
             right: -16,
+            zIndex: -2,
             borderBottomLeftRadius: 32,
             position: "absolute",
             borderColor: "#f5effe",
