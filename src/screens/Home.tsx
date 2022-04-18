@@ -1,4 +1,4 @@
-import { ScreenWidth } from "@freakycoder/react-native-helpers";
+import { ScreenHeight, ScreenWidth } from "@freakycoder/react-native-helpers";
 import React from "react";
 import {
   View,
@@ -98,7 +98,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ style }) => {
           zIndex: -1,
           right: -16,
           bottom: 225,
-          width: 200,
+          width: 300,
           height: 75,
           borderWidth: 15,
           borderTopLeftRadius: 32,
@@ -111,7 +111,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({ style }) => {
       <TouchableOpacity
         style={{
           height: 75,
-          marginTop: 32,
+          marginTop: ScreenHeight * 0.05,
           width: ScreenWidth * 0.65,
           borderTopLeftRadius: 32,
           borderBottomRightRadius: 32,
