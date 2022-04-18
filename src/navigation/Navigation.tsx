@@ -16,33 +16,6 @@ const Navigation = () => {
     return () => (isReadyRef.current = false);
   }, []);
 
-  const RootStack = () => (
-    <Stack.Navigator
-      initialRouteName="home"
-      screenOptions={{
-        gestureEnabled: true,
-        ...(isAndroid && TransitionPresets.ModalPresentationIOS),
-      }}
-    >
-      <Stack.Group
-        screenOptions={{
-          headerShown: false,
-          presentation: "modal",
-        }}
-      >
-        <Stack.Screen name="home" component={HomeScreen} />
-      </Stack.Group>
-      <Stack.Group
-        screenOptions={{
-          headerShown: false,
-          presentation: "modal",
-        }}
-      >
-        <Stack.Screen name="detail" component={DetailScreen} />
-      </Stack.Group>
-    </Stack.Navigator>
-  );
-
   return (
     <NavigationContainer
       ref={navigationRef}
@@ -51,11 +24,28 @@ const Navigation = () => {
       }}
     >
       <Stack.Navigator
-        screenOptions={() => ({
-          headerShown: false,
-        })}
+        initialRouteName="home"
+        screenOptions={{
+          gestureEnabled: true,
+          ...(isAndroid && TransitionPresets.ModalPresentationIOS),
+        }}
       >
-        <Stack.Screen name="home-stack" children={RootStack} />
+        <Stack.Group
+          screenOptions={{
+            headerShown: false,
+            presentation: "modal",
+          }}
+        >
+          <Stack.Screen name="home" component={HomeScreen} />
+        </Stack.Group>
+        <Stack.Group
+          screenOptions={{
+            headerShown: false,
+            presentation: "modal",
+          }}
+        >
+          <Stack.Screen name="detail" component={DetailScreen} />
+        </Stack.Group>
       </Stack.Navigator>
     </NavigationContainer>
   );
