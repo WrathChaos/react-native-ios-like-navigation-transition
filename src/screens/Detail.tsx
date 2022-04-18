@@ -2,7 +2,6 @@ import React from "react";
 import { View, ScrollView } from "react-native";
 import GorgeousHeader from "react-native-gorgeous-header";
 import { AppleCard } from "react-native-apple-card-views";
-import FastImage from "react-native-fast-image"
 
 import menuImage from "../assets/menu.png";
 import searchImage from "../assets/search.png";
@@ -45,7 +44,6 @@ const DetailScreen: React.FC = () => {
       >
         <AppleCard
           smallTitle="Kickbox"
-          ImageComponent={FastImage}
           largeTitle="Let's Rock with Kickbox"
           footnoteText="You will learn kickboxing and burn calories with lots of fun with our professional trainers"
           resizeMode="cover"
