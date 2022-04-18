@@ -10,7 +10,7 @@ const DetailScreen: React.FC = () => {
   return (
     <View style={{ flex: 1, paddingTop: 24, backgroundColor: "#fff" }}>
       <GorgeousHeader
-        title="Traning"
+        title="Training"
         subtitle="Let's loose booty fat and make great abs"
         menuImageSource={menuImage}
         searchImageSource={searchImage}
